@@ -1,8 +1,10 @@
 //your JS code here. If required.
+const form=document.querySelector("form");
 const button =document.getElementById("btn");
 const age=document.getElementById("age");
 const name=document.getElementById("name");
-  button.addEventListener("click",()=>{
+  form.addEventListener("submit",(e)=>{
+	   e.preventDefault();
 	  if(age.value=="" || name.value==""){
 		  alert("Please enter valid details") 
 		  return
